@@ -1,0 +1,228 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 25, 2017, 4:30:52 AM
+    Author     : kennypc
+*/
+@charset "UTF-8";
+
+    @import "bootstrap/bootstrap/css/bootstrap.min.css";
+    
+   @import "bootstrap/font-awesome/css/font-awesome.min.css" ;
+  @import  url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+  @import "bootstrap/dist/css/AdminLTE.min.css";
+  @import "bootstrap/dist/css/skins/_all-skins.min.css";
+
+  @import "bootstrap/plugins/iCheck/flat/blue.css";
+
+  @import "bootstrap/plugins/morris/morris.css";
+   
+  @import "bootstrap/plugins/jvectormap/jquery-jvectormap-1.2.2.css";
+
+  @import "bootstrap/plugins/datepicker/datepicker3.css";
+
+  @import "bootstrap/plugins/daterangepicker/daterangepicker-bs3.css";
+
+  @import "bootstrap/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css";
+  
+  
+  
+/*  
+ 
+   PROFILE 
+.profile {
+  width: 100%;
+  float: left;
+  padding: 15px 10px;
+  position: relative;
+  background: #2d3945;
+}
+.profile .profile-image {
+  float: left;
+  width: 100%;
+  margin: 0px 0px 10px;
+  text-align: center;
+}
+
+.profile .profile-image img {
+  width: 100px;
+  border: 3px solid #FFF;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+
+.profile .profile-data {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.profile .profile-data .profile-data-name {
+  width: 100%;
+  float: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFF;
+}
+.profile .profile-data .profile-data-title {
+  width: 100%;
+  float: left;
+  font-size: 11px;
+  font-weight: 400;
+  color: #999;
+}
+.profile .profile-controls a {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  color: #DDD;
+  border: 2px solid #DDD;
+  line-height: 25px;
+  position: absolute;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding: 0px;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.profile .profile-controls a.profile-control-left {
+  left: 15px;
+  top: 53px;
+  text-align: center;
+}
+.profile .profile-controls a.profile-control-right {
+  right: 15px;
+  top: 53px;
+  text-align: center;
+}
+.profile .profile-controls a .fa,
+.profile .profile-controls a .glyphicon {
+  width: auto;
+  margin-right: auto;
+}
+.profile .profile-controls a:hover {
+  border-color: #FFF;
+  color: #FFF;
+}
+ X-NAVIGATION FEATURES 
+.nav navbar-nav   .profile {
+  width: 220px;
+  background: #33414e;
+  position: absolute;
+  top: 4px;
+  right: -230px;
+  display: none;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.nav navbar-nav    li.active .profile {
+  display: block;
+}
+.nav navbar-nav    .profile-mini {
+  display: block;
+  border-bottom: 0px;
+}
+ END X-NAVIGATION FEATURES 
+   li.xn-profile .profile-mini {
+  display: block;
+}
+.nav navbar-nav   li.xn-profile .profile:after {
+  right: 100%;
+  top: 23px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(0, 0, 0, 0);
+  border-right-color: #33414e;
+  border-width: 5px;
+  margin-top: -5px;
+}
+.nav navbar-nav  -custom.nav  > li.xn-profile > a {
+  border-left: 0px;
+  padding: 7px;
+}
+.nav  > li.xn-profile {
+  padding: 0px;
+  border-bottom: 1px solid #273541;
+}
+.nav  > li.xn-profile .profile-data-name {
+  color: #ffffff;
+}
+.nav  > li.xn-profile .profile-mini {
+  display: none;
+  width: 50px;
+  padding: 7px;
+}
+.nav  > li.xn-profile .profile-mini img {
+  width: 36px;
+  border: 2px solid #FFF;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.nav navbar-nav  navbar-nav  .profile-mini {
+  display: block;
+  border-bottom: 0px;
+}
+.page-container.page-mode-rtl  li .profile {
+  right: auto;
+  left: -230px;
+}
+.page-container.page-mode-rtl  li .profile:after {
+  right: auto;
+  left: 100%;
+  border-right-color: transparent;
+  border-left-color: #33414e;
+}
+
+
+
+
+
+
+nav  li.xn-profile .profile-mini {
+  display: block;
+}
+nav  li.xn-profile .profile:after {
+  right: 100%;
+  top: 23px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(0, 0, 0, 0);
+  border-right-color: #33414e;
+  border-width: 5px;
+  margin-top: -5px;
+}
+nav  > li.xn-profile .profile-mini {
+  display: none;
+  width: 50px;
+  padding: 7px;
+}
+nav  > li.xn-profile .profile-mini img {
+  width: 36px;
+  border: 2px solid #FFF;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+nav  .profile-mini {
+  display: block;
+  border-bottom: 0px;
+}*/
