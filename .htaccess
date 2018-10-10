@@ -1,0 +1,13 @@
+# Necessary to prevent problems when using a controller named "index" and having a root index.php
+# more here: http://httpd.apache.org/docs/2.2/content-negotiation.html
+Options -MultiViews
+
+# Activates URL rewriting (like myproject.com/controller/action/1/2/3)
+RewriteEngine on
+#SetEnvIf Host www.esurfonline.co$ E-surf_ENV=production
+#SetEnvIf Host test.yoursite.tld$ CI_ENV=testing
+SetEnvIf Host localhost$ E-surf_ENV=development
+RewriteCond $1 !^(index\.php|resources|assets|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]
